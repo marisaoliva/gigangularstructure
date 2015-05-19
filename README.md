@@ -1,4 +1,4 @@
-# gigangularestructure
+# gigangularstructure
 Structure example for projects Angular
 
 ## Prerequisites
@@ -12,9 +12,9 @@ You can get them from [http://nodejs.org/](http://nodejs.org/).
 
 ## Install
 
-`git clone git@github.com:gigigo-html5/gigangularestructure.git`
+`git clone git@github.com:gigigo-html5/gigangularstructure.git`
 
-`cd gigangularestructure`
+`cd gigangularstructure`
 
 `git checkout develop`
 
