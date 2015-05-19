@@ -88,7 +88,7 @@ For views or templates:
 
 })();
 
-```js
+```
 
 
 
