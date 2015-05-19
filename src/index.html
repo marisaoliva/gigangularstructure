@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-navigator>
+<head>
+    <base href="/" />
+    <meta charset="utf-8">
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title ng-bind="title"></title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+
+    <!-- build:css assets/css/general.css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- endbuild -->
+
+
+</head>
+<body ng-controller="CoreController">
+    <div class="container" ui-view></div>
+</body>
+
+<!-- build:js assets/js/vendor.js -->
+<!-- bower:js -->
+<script src="assets/libs/angular/angular.js"></script>
+<script src="assets/libs/ui-router/release/angular-ui-router.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js assets/js/app.js -->
+<script src="app/app.modules.js"></script>
+<script src="app/app.routes.js"></script>
+
+
+<!-- core module -->
+<script src="app/core/core.modules.js"></script>
+<script src="app/core/core.controllers.js"></script>
+<script src="app/core/core.config.js"></script>
+<script src="app/core/core.templates.js"></script>
+<script src="app/core/services/api.services.js"></script>
+<script src="app/core/services/translations.services.js"></script>
+
+
+<!-- endbuild -->
+
+
+</html>

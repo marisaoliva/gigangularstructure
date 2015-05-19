@@ -1,0 +1,8 @@
+dist/
+node_modules/
+src/assets/libs
+src/app/core/core.templates.js
+src/app/core/core.config.js
+src/assets/coke.appcache
+.idea/
+config.json

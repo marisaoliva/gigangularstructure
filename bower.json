@@ -1,0 +1,22 @@
+{
+  "name": "gigangularestructure",
+  "version": "0.0.1",
+  "homepage": "https://github.com/gigigo-html5/gigangularestructure",
+  "authors": [
+    "Pedro Peña <pedro.jose@gigigo.com>"
+  ],
+  "description": "Structure example for angular project",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15",
+    "ui-router": "~0.2.14"
+  }
+}
