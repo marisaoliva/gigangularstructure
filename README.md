@@ -9,6 +9,9 @@ You will need **git** to clone the material-start repository. You can get git fr
 You must have node.js and its package manager (npm) installed.
 You can get them from [http://nodejs.org/](http://nodejs.org/).
 
+You must have less installed.
+You cant get it from [http://lesscss.org/] (http://lesscss.org).
+
 
 ## Install
 
