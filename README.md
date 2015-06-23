@@ -21,13 +21,13 @@ You cant get it from [http://lesscss.org/] (http://lesscss.org).
 
 `git checkout develop`
 
+`cp config.json.dist config.json`
+
 `npm install`
 
 ## Start
 
 To start the project
-
-`cp config.json.dist config.json`
 
 `npm start`
 
