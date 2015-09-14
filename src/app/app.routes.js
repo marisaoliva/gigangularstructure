@@ -15,14 +15,6 @@
                         }
                     }
                 })
-                .state('main.home', {
-                    url: '/',
-                    views: {
-                        'content' : {
-                            template: '<div>{{::translations.Hello_World}}</div>'
-                        }
-                    }
-                })
 
             // Allow javascript in ng-href
             $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|javascript):/);

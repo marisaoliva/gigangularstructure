@@ -1,6 +1,6 @@
 'use strict';
 
-var CONFIG = require('./config.json');
+var CONFIG = require('./parameters.json');
 var server = CONFIG.server;
 
 
@@ -206,8 +206,20 @@ module.exports = function (grunt) {
                 stdout : true,
                 stderr : true
             }
+        },
+        browserSync: {
+            bsFiles: {
+                src : '<%= app.dev %>/**'
+            },
+            options: {
+                server: {
+                    baseDir: "<%= app.dev %>/"
+                }
+            }
         }
     });
+
+    grunt.registerTask('serve', ['browserSync'])
 
 
     grunt.registerTask('prepare', [

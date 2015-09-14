@@ -5,4 +5,5 @@ src/app/core/core.templates.js
 src/app/core/core.config.js
 src/assets/coke.appcache
 .idea/
+parameters.json
 config.json

@@ -160,51 +160,17 @@ h2,
 h3 {
   font-weight: normal;
 }
-/* Backgrounds Group
-========================== */
-/* @group gradient-veritical() */
-/* @end */
-/* @group background-clip() */
-/* @end */
-/* Box Group
-========================== */
-/* @option: box-display() */
-/* @end */
-/* @group box-shadow() */
-/* @end */
-/* Border Group
-========================== */
-/* @group rounded() */
-/* @end */
-/* Transform Group
-========================== */
-/* @group matrix() */
-/* @end */
-/* @group rotate() */
-/* @end */
-/* @group scale() */
-/* @end */
-/* @group translate() */
-/* @end */
-/* @group skew() */
-/* @end */
-/* Transition
-========================== */
-/* Animation Group
-========================== */
-/* Column
-========================== */
-/* Misc Group
-========================== */
 * {
   /* ( content-box | border-box | inherit ) */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+/*** VARs ***/
 html {
   height: 100%;
   font-family: "Helvetic Neue", Helvetica, Arial;
+  font-size: 10px;
 }
 body,
 .container {
@@ -212,29 +178,30 @@ body,
   position: relative;
 }
 header {
-  height: 5%;
-  background: #FF001C;
+  background: #c01118;
   color: white;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
-  padding: 10px;
-  min-height: 50px;
+  padding: 1rem;
+  height: 4rem;
   position: fixed;
   width: 100%;
 }
 section {
-  min-height: 95%;
-  padding: 5%;
+  min-height: calc(96vh);
   text-align: center;
 }
 footer {
-  height: 5%;
-  background: #FF001C;
+  background: #c01118;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
   color: white;
-  padding: 10px;
-  min-height: 50px;
+  padding: 1rem;
+  min-height: 4rem;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
 }

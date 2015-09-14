@@ -1,13 +1,22 @@
+// out: ../style.css, sourcemap: false, compress: false
+
 @import "_reset.less";
-@import "_dss.less";
+@import (reference) "_dss.less";
+@import (reference) "_mixins.less";
 
 * {
     .box-sizing();
 }
 
+/*** VARs ***/
+@sizeMenu: 4rem;
+@primaryColor: #c01118;
+
+
 html {
     height: 100%;
     font-family: "Helvetic Neue", Helvetica, Arial;
+    font-size: 10px;
 }
 
 body, .container {
@@ -16,32 +25,32 @@ body, .container {
 }
 
 header {
-    height: 5%;
-    background: #FF001C;
+    background: @primaryColor;
     color: white;
     text-align:center;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: bold;
-    padding: 10px;
-    min-height: 50px;
+    padding: 1rem;
+    height: @sizeMenu;
     position:fixed;
     width: 100%;
 }
 
 section {
-    min-height: 95%;
-    padding: 5%;
+    .minheightwindow(@size: @sizeMenu);
     text-align:center;
 }
 
 footer {
-    height: 5%;
-    background: #FF001C;
+    background: @primaryColor;
     text-align:center;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: bold;
     color: white;
-    padding: 10px;
-    min-height: 50px;
+    padding: 1rem;
+    min-height: @sizeMenu;
+    position:absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
 }
-

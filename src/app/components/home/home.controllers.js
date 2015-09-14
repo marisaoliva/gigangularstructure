@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    function CoreController() {
+    function HomeController() {
         var title = 'Angular Structure';
 
         angular.extend(this, {
@@ -9,7 +9,7 @@
         });
     }
 
-    angular.module('app.core')
-        .controller('CoreController', CoreController);
+    angular.module('app.home')
+        .controller('HomeController', HomeController);
 
 })();

@@ -3,7 +3,7 @@
 
     angular.module('app', [
         'ui.router',
-        'app.core'
+        'app.core', 'app.home'
     ])
 
         .run(function($rootScope, $templateCache, TEMPLATE_CACHE) {

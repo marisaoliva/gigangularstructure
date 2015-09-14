@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html ng-app="app" ng-navigator>
+<html ng-app="app" ng-navigator ng-controller="CoreController as core">
 <head>
     <base href="/" />
     <meta charset="utf-8">
     <meta name="fragment" content="!">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <meta name="mobile-web-app-capable" content="yes">
-    <title ng-bind="title"></title>
+    <title ng-bind="core.title"></title>
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
 
     <!-- build:css assets/css/general.css -->
@@ -15,7 +15,7 @@
 
 
 </head>
-<body ng-controller="CoreController">
+<body>
     <div class="container" ui-view></div>
 </body>
 
@@ -39,7 +39,10 @@
 <script src="app/core/services/api.services.js"></script>
 <script src="app/core/services/translations.services.js"></script>
 
-
+<!-- home module -->
+<script src="app/components/home/home.modules.js"></script>
+<script src="app/components/home/home.controllers.js"></script>
+<script src="app/components/home/home.routes.js"></script>
 <!-- endbuild -->
 
 

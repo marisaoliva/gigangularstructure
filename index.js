@@ -3,7 +3,7 @@ var app = express();
 var https = require('https');
 var http = require('http');
 var pem = require('pem');
-var CONFIG  = require('./config.json');
+var CONFIG  = require('./parameters.json');
 
 var dirProject = CONFIG[CONFIG.server].directory;
 var PORT = CONFIG[CONFIG.server].port;

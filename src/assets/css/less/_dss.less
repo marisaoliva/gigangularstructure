@@ -447,10 +447,10 @@
 ========================== */
 
 .transition (@property: all, @duration: 0.2s, @timing: ease-out, @delay: 0) {
-    -webkit-transition: @arguments;
+    -webkit-transition: @property @duration @timing ~"@{delay}s";
     -moz-transition: @property @duration @timing ~"@{delay}s";
-    -o-transition: @arguments; /* Opera 10.5+ */
-    transition: @arguments;
+    -o-transition: @property @duration @timing ~"@{delay}s";
+    transition: @property @duration @timing ~"@{delay}s";
 }
 
 
@@ -462,6 +462,7 @@
     -webkit-animation: @name @duration @timing @delay @iteration-count @direction; /* Saf5, Chrome */
     -moz-animation: @name @duration @timing ~"@{delay}s" @iteration-count @direction; /* FF5+ */
     -o-animation: @name @duration @timing @delay @iteration-count @direction; /* Opera 12+ */
+    animation: @name @duration @timing @delay @iteration-count @direction;
 }
 
 .animation-state (@state: running) { /* ( paused | running ) */
