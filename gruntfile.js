@@ -48,6 +48,11 @@ module.exports = function (grunt) {
                 constants: CONFIG[CONFIG.server].constants
             }
         },
+        karma:  {
+            unit:  {
+              configFile: 'karma.conf.js'
+            }
+        },
         // Empties folders to start fresh
         clean: {
             pro: {
@@ -235,7 +240,12 @@ module.exports = function (grunt) {
         'usemin',
         'uglify',
         'clean:templates'
+    ])
+
+    grunt.registerTask('test', [
+      'karma'
     ]);
+
 
 
 
